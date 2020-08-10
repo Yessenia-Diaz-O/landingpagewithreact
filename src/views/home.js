@@ -2,24 +2,29 @@ import React from "react";
 import Card from "../components/card";
 import Jumbo from "../components/jumbo";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Home = () => {
     const cartas = [
         {
-            titulo: "Andrea cartas 1",
-            texto: "andrea texto 1",
+            titulo: "Carta 1",
+            texto: "Texto 1",
+            imagen: "../img/1.jpeg",
         },
         {
-            titulo: "Andrea cartas 2",
-            texto: "andrea texto 2",
+            titulo: "Carta 2",
+            texto: "Texto 2",
+            imagen: "../img/4.png",
         },
         {
-            titulo: "Andrea cartas 3",
-            texto: "andrea texto 3",
+            titulo: "Carta 3",
+            texto: "Texto 3",
+            imagen: "../img/1.jpeg",
         },
         {
-            titulo: "Andrea cartas 4",
-            texto: "andrea texto 4",
+            titulo: "Carta 4",
+            texto: "Texto 4",
+            imagen: "../img/4.png",
         },
     ]
     return (<>
@@ -30,6 +35,8 @@ const Home = () => {
         <Card arreglodecartas= {cartas} />
         
         {/* footer */}
+        <Footer piedepagina={"Footer"}/>
+        {/* primera letra mayuscula del componente, se importa automatico arriba */}
         
     </>)
 
